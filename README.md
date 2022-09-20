@@ -23,3 +23,18 @@ Powershell scripts to create Zabbix items, triggers using the Zabbix API.
 ### Not included
 
 - Installation of Zabbix server
+
+
+### Visualization
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant gitlab runner
+    participant zabbix
+    
+    gitlab runner->>+zabbix: Create item
+    zabbix->>zabbix: 
+    Note right of zabbix: Create item
+    zabbix->>gitlab runner: return item id
+```
