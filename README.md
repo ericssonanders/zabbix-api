@@ -34,7 +34,8 @@ sequenceDiagram
     participant zabbix
     
     gitlab runner->>+zabbix: Create item
+    Note over gitlab runner, zabbix: 
     zabbix->>zabbix: 
-    Note right of zabbix: Create item
+    Note right of zabbix: Creates item
     zabbix->>gitlab runner: return item id
 ```
